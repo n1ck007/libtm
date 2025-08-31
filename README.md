@@ -1,0 +1,18 @@
+# LibTM Tools
+- `tmc` Turing Machine Compiler
+  - takes a machine description file and compiles that into an *"executable"*
+  - This executable is a text file consisting of assembly-like intructions to be carried about by the interpreter
+  - this tool is a compiler in the sense that it converts a source language into a target language
+  - it converts the the machine description language to the machine instructions language
+- `tmi` Turing Machine Interpreter
+  - similar to bash, the `.tm` files output by `tmc` can be prepended with `#!/usr/bin/tmi` 
+  - or pass to the `tmi` command via the command-line
+  - the `.tm` file can be read manually by the user or executed to produce the final result
+  - It is at this point the actual input is given to the machine
+- `tmdb` Turing Machine Debugger
+  - takes `.tm` file as input allows the user to debug the turing machine program
+  - will act similar to `gdb` and `lldb` will the ability to set break points etc.
+- `tm` Turning Machine Command Line Interface Tool
+  - Combines the functionality of all three tools into one user friendly tool for ease of use.
+  - Does Compiling, Interpreting, and Debugging without the need to call the other commands?
+  - Maybe `tmdb` should still be its own command? TBD
