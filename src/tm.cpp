@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "cmdparser.hpp"
+#include "../lib/CmdParser/cmdparser.hpp"
 
 void configure_parser(cli::Parser& parser) {
   parser.set_optional<std::string>("o", "output", "out.tm", "Output file");
